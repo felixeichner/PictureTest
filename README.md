@@ -1,4 +1,2 @@
-for deployment:
-- for postgresql add host, username, password in config/locales/database.yml#production
-- for devise to work add to config/environments/production.rb:
-	config.action_mailer.default_url_options = { host: '???', port: ??? }
+Ruby code for a coding exercise
+to find on __[http://picturetestapp.herokuapp.com/](http://picturetestapp.herokuapp.com/)__
