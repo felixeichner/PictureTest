@@ -1,0 +1,13 @@
+<% if current_user %>
+  <h3>Hello, <%= current_user.name %></h3>
+  <p>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <%= link_to "Delete Account", user_registration_path,
+                                  method: :delete, data: { confirm: "Delete Account?" } %>
+  </p>
+  <p><%= link_to "Upload new Image", new_image_path %></p>
+  <%= render 'image' %>
+<% else %>
+  <%= link_to "Login", new_user_session_path %>
+  <%= link_to "Register", new_user_registration_path %>
+<% end %>

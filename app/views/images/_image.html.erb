@@ -1,0 +1,7 @@
+<p>
+	<% @images.each do |image| %>
+  	<%= image_tag(image.image.thumb) %>
+  	<%= link_to "Delete Image", image_path(image), method: :delete,
+  	                                               data: { confirm: "Delete Image?" } %>
+	<% end %>
+</p>
