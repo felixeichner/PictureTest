@@ -1,4 +1,10 @@
-<%= image_tag @image.image %>
-<%= link_to 'Delete Image', image_path(@image), method: :delete,
-																								data: { confirm: "Delete Image?" } %>
-<%= link_to 'Overview', images_path %>
+<div class="container">
+	<div class="show">
+			<%= image_tag @image.image %>
+	</div>
+	<div class="show">
+		<%= link_to "Delete Image", image_path(@image), method: :delete,
+	                       			data: { confirm: "Delete Image?" }, class: "btn btn-info" %>
+		<%= link_to 'All Pictures', images_path, class: "btn btn-info" %>
+	</div>
+</div>

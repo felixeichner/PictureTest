@@ -1,0 +1,23 @@
+<div class="container">
+	<nav class="navbar navbar-light">
+		<% if current_user %>
+  		<div class="col-auto">
+  			<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    	</div>
+    	<div class="col-auto">
+  			<%= link_to "Delete Account", user_registration_path,
+        		                          method: :delete, data: { confirm: "Delete Account?" } %>
+  		</div>
+		<% else %>
+  		<div class="col-auto">
+  			<%= link_to "Login", new_user_session_path %>
+  		</div>
+  		<div class="col-auto">
+  			<%= link_to "Register", new_user_registration_path %>
+			</div>
+		<% end %>
+		<div class="col-auto" id="notice"><%= notice %></div>
+    <div class="col-auto" id="alert"><%= alert %></div>
+		<div class="col"></div>
+	</nav>
+</div>

@@ -1,0 +1,52 @@
+@import "bootstrap";
+
+html,
+body {
+  height: 100%;
+}
+
+a,
+a:focus,
+a:hover {
+	font-weight: bold;
+  color: #000;
+}
+
+.navbar {
+	a,
+	a:focus,
+	a:hover {
+		font-size: 20px;
+	  text-shadow: 3px 3px 1px #46494A;
+	}
+
+	background-color: #026D7D;
+	border-radius: 10px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+.body-container {
+	background-color: #ABEBF5;
+	padding: 30px;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 1rem; 
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.show {
+	text-align: center;
+}
+
+.btn-info {
+	margin-top: 1rem;
+}
