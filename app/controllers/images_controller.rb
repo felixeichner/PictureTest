@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
   before_action :validate_user, except: [:index]
 
   def index
-    @images = Image.where(:user_id => current_user.id) if current_user
+    @images = current_user.images if current_user
   end
 
   def show
